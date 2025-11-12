@@ -5,12 +5,60 @@ body{
   font-size: 16px;
   font-family: "krub", sans-serif;
 }
+@media (min-width: 480px){
+}
+
 .titulo{
   text-align: center;
   font-size: 4rem;
   color: blue;
-  font-family: Arial, Helvetica, sans-serif
+  /*font-family: Arial, Helvetica, sans-serif*/
 }
 .titulo span{
   font-size: 2rem;
+}
+.contenedor{
+  width: 120rem;
+  margin-top: 0rem;
+  margin-bottom: 0rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+.nav-bg{
+  background-color: yellow;
+}
+.navegacion-principal{
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 480px){
+     .navegacion-principal{
+      flex-direction: row;
+     }
+}
+@media (min-width: 768px){
+     .navegacion-principal{
+      flex-direction: row;
+      justify-content: space-between;
+     }
+}
+@media (min-width: 1140px){
+     
+}
+@media (min-width: 1400px){
+     
+}
+
+.navegacion-principal a {
+  display: block;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  padding: 1rem;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.navegacion-principal a:hover{
+  background-color: blue;
+  color: black;
 }
